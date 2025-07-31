@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: seashell;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: auto 100%;
+    background-repeat:   no-repeat;
+    height: 80vh; 
+    border-radius: 50px;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in-out;
+}
+
+.panel.active.text {
+    opacity: 1;
+}
+.panel h3 {
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+
+.text {
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50px;
+    left: 30px;
+    right: 30px;
+    padding: 10px;
+}
+
+.text.active{
+    opacity: 1;
+}
+.panel.active{ 
+    flex: 5;
+}
+ 
+.panel.active h3 {
+    opacity: 1;
+}
+
+@media (max-width: 480px){
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4), .panel:nth-of-type(5){
+        display: none;
+    }
+
+    .panel h3 {
+        font-size: 20px;
+        bottom: 10px;
+        left: 10px;
+    }
+}
