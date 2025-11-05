@@ -43,11 +43,7 @@ function showMovies(movies) {
   });
 }
 
-getClassByRate(vote){
-    if(vote >= 8) return 'green'
-    else if(vote >= 5) return 'orange'
-    else return 'red';
-}
+
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -60,3 +56,9 @@ form.addEventListener("submit", (e) => {
     window.location.reload();
   }
 });
+
+function getClassByRate(vote){
+    if(vote >= 8) return 'green'
+    else if(vote >= 5) return 'orange'
+    else return 'red';
+}
