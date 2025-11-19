@@ -1,0 +1,32 @@
+body {
+    background-color: #999;
+    font-family: sans-serif;
+        
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;    
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.color-blue {
+    background-color: rgb(25, 140, 179);
+}
+.color-green {
+    background-color: rgb(46, 194, 120);
+}
+.color-ashwhite {
+    background-color: rgb(196, 191, 191);
+}
+.color-yellow {
+    background-color: rgb(221, 209, 149);
+}
+
+.pill {
+    
+}

@@ -1,5 +1,3 @@
-
-
 * {
     box-sizing: border-box;
 }
@@ -24,14 +22,27 @@ body {
     background: white;
 
 }
+
+.hovered {
+    background-color: #333;
+    border-color: white;
+    border-style: dashed;
+}   
+
 .fill {
-    background-image: url('https://source.unsplash.com/random/150x150');
+    background-image: url('https://placebear.com/150/150');
     height: 145px;
     width: 145px;
     cursor: pointer;
+    background-size: cover;
+    background-position: center;
 }
 
-@media(max-width:800px){
+.hold {
+    border: solid 5px #CCC;
+}
+
+@media(max-width:800px) {
     body {
         flex-direction: column;
 
