@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    flex-direction: column;
+    
+}
